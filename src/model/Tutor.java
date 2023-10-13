@@ -33,4 +33,9 @@ public class Tutor extends Usuario{
     public String toString() {
         return super.toString() + ", tipo: " + tipo;
     }
+
+    @Override
+    public float calculaSalario(int qtdHoras, int qtdDias) {
+        return qtdHoras * qtdDias * 40;
+    }
 }

@@ -20,4 +20,9 @@ public class Vendedor extends Usuario{
     public String toString() {
         return super.toString() + ", quantidade de vendas: " + qtdVendas;
     }
+
+    @Override
+    public float calculaSalario(int qtdHoras, int qtdDias) {
+        return qtdHoras * qtdDias * 25;
+    }
 }

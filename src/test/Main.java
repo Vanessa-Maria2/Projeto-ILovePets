@@ -36,6 +36,7 @@ public class Main {
 
         System.out.println("\nInformacoes do Vendedor:");
         System.out.println(vendedor);
+        System.out.println("Cálculo salário: " + vendedor.calculaSalario(100, 20));
 
         System.out.println("\nInformacoes do Tutor:");
         System.out.println(tutor);

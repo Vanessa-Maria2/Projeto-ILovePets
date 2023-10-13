@@ -28,4 +28,9 @@ public class PrestadorDeServicos extends Usuario{
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }
+
+    @Override
+    public float calculaSalario(int qtdHoras, int qtdDias) {
+        return qtdHoras * qtdDias * 20;
+    }
 }
