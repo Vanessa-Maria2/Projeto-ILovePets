@@ -1,31 +1,22 @@
 package model;
 
-public class Cao extends Animal {
-
-	private String som;
-	
+public class Cao extends Animal {	
     public Cao(String nome, String sexo, int idade) {
-        super(nome, sexo, "Cao", "Racao de cachorro", idade);
+        super(nome, sexo, idade);
     }
 
     @Override
     public void emitirSom() {
-    	som = "Latindo...";
+    	System.out.println("Latindo...");
     }
-
+    
     @Override
-    public void especie() {
-        System.out.println("Cão");
-    }
-
-    @Override
-    public void comer() {
-        System.out.println("Comendo ração de cachorro...");
+    public String especie() {
+        return "Poodle";
     }
 
     @Override
     public String toString() {
-    	emitirSom();
-        return super.toString() + ", som: " + som;
+        return super.toString() + especie();
     }
 }

@@ -1,9 +1,8 @@
 package model;
 
 public class Coelho extends Animal {
-
-    public Coelho(String nome, String sexo, int idade) {
-        super(nome, sexo, "Coelho", "Vegetais", idade);
+	public Coelho(String nome, String sexo, int idade) {
+        super(nome, sexo, idade);
     }
 
     @Override
@@ -12,13 +11,13 @@ public class Coelho extends Animal {
     }
 
     @Override
-    public void especie() {
-        System.out.println("Coelho");
+    public String especie() {
+        return "Coelho Europeu";
     }
 
     @Override
-    public void comer() {
-        System.out.println("Comendo vegetais...");
+    public String toString() {
+        return super.toString() + especie();
     }
 }
 

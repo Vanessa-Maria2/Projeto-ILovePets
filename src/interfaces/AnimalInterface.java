@@ -4,7 +4,6 @@ public interface AnimalInterface {
 
     public void emitirSom();
 
-    public void especie();
-    
-    public void comer();
+    public String especie();
+
 }

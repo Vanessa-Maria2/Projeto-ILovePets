@@ -52,16 +52,21 @@ public class Main {
         // Exibição das informações dos animais
         System.out.println("\nInformacoes do Cao:");
         System.out.println(cao);
+    	cao.emitirSom();
 
         System.out.println("\nInformacoes do Gato:");
         System.out.println(gato);
+    	gato.emitirSom();
 
         System.out.println("\nInformacoes do Coelho:");
         System.out.println(coelho);
+    	coelho.emitirSom();
 
         System.out.println("\nInformacoes do Rato:");
         System.out.println(rato);
-    }
+    	rato.emitirSom();
+    	
+    	}
 }
 
 

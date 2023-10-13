@@ -1,9 +1,8 @@
 package model;
 
 public class Gato extends Animal {
-
     public Gato(String nome, String sexo, int idade) {
-        super(nome, sexo, "Gato", "Racao de gato", idade);
+        super(nome, sexo, idade);
     }
 
     @Override
@@ -12,12 +11,12 @@ public class Gato extends Animal {
     }
 
     @Override
-    public void especie() {
-        System.out.println("Gato");
+    public String especie() {
+        return "Siamês";
     }
 
     @Override
-    public void comer() {
-        System.out.println("Comendo racao de gato...");
+    public String toString() {
+        return super.toString() + especie();
     }
 }
