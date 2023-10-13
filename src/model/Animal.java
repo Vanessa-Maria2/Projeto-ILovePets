@@ -3,14 +3,13 @@ package model;
 import interfaces.AnimalInterface;
 
 public class Animal implements AnimalInterface {
-    private String nome, sexo, especie;
+    private String nome, sexo;
     private int idade;
 
     public Animal(String nome, String sexo, int idade) {
         this.nome = nome;
         this.sexo = sexo;
         this.idade = idade;
-        this.especie = "";
     }
 
     public String getNome() {
@@ -27,14 +26,6 @@ public class Animal implements AnimalInterface {
 
     public void setSexo(String sexo) {
         this.sexo = sexo;
-    }
-
-    public String getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
     }
     
     public int getIdade() {
@@ -58,6 +49,6 @@ public class Animal implements AnimalInterface {
     
     @Override
     public String toString() {
-        return "Nome: " + nome + ", idade: " + idade + ", sexo: " + sexo + ", especie: " + especie;
+        return "Nome: " + nome + ", idade: " + idade + ", sexo: " + sexo;
     }
 }

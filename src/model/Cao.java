@@ -17,6 +17,6 @@ public class Cao extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + especie();
+        return super.toString() + ", especie: " + especie();
     }
 }

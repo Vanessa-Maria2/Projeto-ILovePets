@@ -7,7 +7,7 @@ public class Rato extends Animal {
 
     @Override
     public void emitirSom() {
-        System.out.println("Fazendo ruídos de roedura...");
+        System.out.println("Fazendo ruidos de roedura...");
     }
 
     @Override
@@ -17,7 +17,7 @@ public class Rato extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + especie();
+        return super.toString() + ", especie: " + especie();
     }
 
 }

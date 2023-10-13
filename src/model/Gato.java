@@ -12,11 +12,11 @@ public class Gato extends Animal {
 
     @Override
     public String especie() {
-        return "Siamês";
+        return "Siames";
     }
 
     @Override
     public String toString() {
-        return super.toString() + especie();
+        return super.toString() + ", especie: " + especie();
     }
 }

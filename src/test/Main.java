@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         // Criação de instâncias de animais
     	Animal cao = new Cao("Fido", "Macho", 3);
-        Animal gato = new Gato("Whiskers", "Fêmea", 2);
+        Animal gato = new Gato("Whiskers", "Femea", 2);
         Animal coelho = new Coelho("Pernalonga", "Macho", 1);
         Animal rato = new Rato("Jerry", "Macho", 1);
      
