@@ -3,15 +3,15 @@ package model;
 import interfaces.AnimalInterface;
 
 public class Animal implements AnimalInterface {
-    private String nome, sexo;
+    private String nome, sexo, especie, comer;
     private int idade;
-    private boolean doente;
 
-    public Animal(String nome, String sexo, int idade, boolean doente) {
+    public Animal(String nome, String sexo, String especie, String comer, int idade) {
         this.nome = nome;
         this.sexo = sexo;
+        this.especie = especie;
+        this.comer = comer;
         this.idade = idade;
-        this.doente = doente;
     }
 
     public String getNome() {
@@ -30,6 +30,22 @@ public class Animal implements AnimalInterface {
         this.sexo = sexo;
     }
 
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+    
+    public String getComer() {
+        return comer;
+    }
+
+    public void setComer(String comer) {
+        this.comer = comer;
+    }
+    
     public int getIdade() {
         return idade;
     }
@@ -38,22 +54,24 @@ public class Animal implements AnimalInterface {
         this.idade = idade;
     }
 
-    public void setDoente(boolean doente){
-        this.doente = doente;
-    }
-
-    @Override
-    public boolean isDoente() {
-        return doente;
-    }
 
     @Override
     public void emitirSom(){
         System.out.println("Emitindo som...");
     }
+    
+    @Override
+    public void especie(){
+        System.out.println("Especie...");
+    }
+    
+    @Override
+    public void comer(){
+        System.out.println("Comendo...");
+    }
 
     @Override
     public String toString() {
-        return "Nome: " + nome + ", idade: " + idade + ", sexo: " + sexo + ", doente: " + doente;
+        return "Nome: " + nome + ", idade: " + idade + ", sexo: " + sexo + ", especie: " + especie + ", comer: " + comer ;
     }
 }
