@@ -4,23 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrestadorDeServicos extends Usuario{
-    private List<String> servicos = new ArrayList<String>();
     private List<String> especialidades = new ArrayList<String>();
     private Animal animal;
 
-    public PrestadorDeServicos(String nome, String email, String endereco, int idade, int matricula, int telefone, float salario, List<String> servicos, List<String> especialidades, Animal animal) {
+    public PrestadorDeServicos(String nome, String email, String endereco, int idade, int matricula, int telefone, float salario, List<String> especialidades, Animal animal) {
         super(nome, email, endereco, idade, matricula, telefone, salario);
-        this.servicos = servicos;
         this.especialidades = especialidades;
         this.animal = animal;
-    }
-
-    public List<String> getServicos() {
-        return servicos;
-    }
-
-    public void setServicos(List<String> servicos) {
-        this.servicos = servicos;
     }
 
     public List<String> getEspecialidades() {

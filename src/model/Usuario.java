@@ -75,7 +75,7 @@ public class Usuario implements UsuarioInterface{
 
    @Override
     public String toString(){
-        return "Nome: " + nome + ", email: " + email + ", endereçp: " + endereco + ", idade: " + idade +
+        return "Nome: " + nome + ", email: " + email + ", endereço: " + endereco + ", idade: " + idade +
         ", matrícula: " + matricula + ", telefone:" + telefone + ", salário: " + salario;
     }
 

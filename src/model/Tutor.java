@@ -28,4 +28,9 @@ public class Tutor extends Usuario{
     public void setAnimais(List<Animal> animais) {
         this.animais = animais;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", tipo: " + tipo;
+    }
 }

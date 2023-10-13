@@ -15,4 +15,9 @@ public class Vendedor extends Usuario{
     public void setQtdVendas(int qtdVendas) {
         this.qtdVendas = qtdVendas;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", quantidade de vendas: " + qtdVendas;
+    }
 }
